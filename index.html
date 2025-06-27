@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arte Perfecto</title>
+    <link rel="stylesheet" href="estilos.css" />
+</head>
+
+<body>
+    <!-- Pantalla de carga -->
+    <div id="loader">
+        <div class="spinner"></div>
+    </div>
+
+    <header>Arte Perfecto</header>
+
+    <main class="contenedor derecha" onclick="alternarInfo(this, event)">
+        <div class="foto">
+            <img id="img1" src="/fotos/1R.jpg" alt="Obra de arte 1" data-original="/fotos/1R.jpg"
+                data-alt="/fotos/Dibujos/1.jpg">
+            <button class="cambiar-btn" onclick="alternarImagen('img1'); event.stopPropagation();">
+                <img src="/Icons/lapiz.png" alt="Cambiar imagen">
+            </button>
+        </div>
+        <div class="info">
+            <h2>Susurros del atardecer</h2>
+            <p>La silueta femenina captura la calidez del sol que se despide. Su postura transmite confianza mientras el
+                mar susurra promesas de eternidad entre las olas y la arena.</p>
+        </div>
+    </main>
+
+    <main class="contenedor izquierda" onclick="alternarInfo(this, event)">
+        <div class="foto">
+            <img id="img2" src="/fotos/2R.jpg" alt="Obra de arte 2" data-original="/fotos/2R.jpg"
+                data-alt="/fotos/Dibujos/2.jpg">
+            <button class="cambiar-btn" onclick="alternarImagen('img2'); event.stopPropagation();">
+                <img src="/Icons/lapiz.png" alt="Cambiar imagen">
+            </button>
+        </div>
+        <div class="info">
+            <h2>Ojos de Sal y Arena</h2>
+            <p>Unos ojos intensos que reflejan el horizonte. Como si llevaran dentro la brisa salada del océano y los
+                secretos guardados entre las olas.</p>
+        </div>
+    </main>
+
+    <main class="contenedor derecha" onclick="alternarInfo(this, event)">
+        <div class="foto">
+            <img id="img3" src="/fotos/3R.jpg" alt="Obra de arte 3" data-original="/fotos/3R.jpg"
+                data-alt="/fotos/Dibujos/3.jpg">
+            <button class="cambiar-btn" onclick="alternarImagen('img3'); event.stopPropagation();">
+                <img src="/Icons/lapiz.png" alt="Cambiar imagen">
+            </button>
+        </div>
+        <div class="info">
+            <h2>Reflejo de una tarde dorada</h2>
+            <p>Con el sol a sus espaldas, ella captura su reflejo junto al mar. La escena evoca esa sensación de amor
+                propio bajo la luz dorada de una playa en calma.</p>
+        </div>
+    </main>
+
+    <main class="contenedor izquierda" onclick="alternarInfo(this, event)">
+        <div class="foto">
+            <img id="img4" src="/fotos/4R.jpg" alt="Obra de arte 4" data-original="/fotos/4R.jpg"
+                data-alt="/fotos/Dibujos/4.jpg">
+            <button class="cambiar-btn" onclick="alternarImagen('img4'); event.stopPropagation();">
+                <img src="/Icons/lapiz.png" alt="Cambiar imagen">
+            </button>
+        </div>
+        <div class="info">
+            <h2>Pensamientos en la marea</h2>
+            <p>Su mirada baja como quien recuerda un amor vivido al borde del agua. Los rizos caen como olas suaves,
+                envolviendo una nostalgia tierna.</p>
+        </div>
+    </main>
+
+    <main class="contenedor derecha" onclick="alternarInfo(this, event)">
+        <div class="foto">
+            <img id="img5" src="/fotos/5R.jpg" alt="Obra de arte 5" data-original="/fotos/5R.jpg"
+                data-alt="/fotos/Dibujos/5.jpg">
+            <button class="cambiar-btn" onclick="alternarImagen('img5'); event.stopPropagation();">
+                <img src="/Icons/lapiz.png" alt="Cambiar imagen">
+            </button>
+        </div>
+        <div class="info">
+            <h2>Coral Encendido</h2>
+            <p>El azul del traje se funde con el océano, donde cada paso sobre la arena deja huellas en el corazón.</p>
+        </div>
+    </main>
+
+    <main class="contenedor izquierda" onclick="alternarInfo(this, event)">
+        <div class="foto">
+            <img id="img6" src="/fotos/6R.jpg" alt="Obra de arte 6" data-original="/fotos/6R.jpg"
+                data-alt="/fotos/Dibujos/6.jpg">
+            <button class="cambiar-btn" onclick="alternarImagen('img6'); event.stopPropagation();">
+                <img src="/Icons/lapiz.png" alt="Cambiar imagen">
+            </button>
+        </div>
+        <div class="info">
+            <h2>Danza de espuma y sol</h2>
+            <p>La mañana nace sobre su piel, y las olas celebran su presencia danzando alrededor de su cuerpo.</p>
+        </div>
+    </main>
+
+    <main class="contenedor derecha" onclick="alternarInfo(this, event)">
+        <div class="foto">
+            <img id="img7" src="/fotos/7R.jpg" alt="Obra de arte 7" data-original="/fotos/7R.jpg"
+                data-alt="/fotos/Dibujos/7.jpg">
+            <button class="cambiar-btn" onclick="alternarImagen('img7'); event.stopPropagation();">
+                <img src="/Icons/lapiz.png" alt="Cambiar imagen">
+            </button>
+        </div>
+        <div class="info">
+            <h2>Castillo al Atardecer</h2>
+            <p>De espaldas al mundo, contempla el castillo iluminado por la caída del sol, mientras el amor flota en el
+                aire salado.</p>
+        </div>
+    </main>
+
+    <main class="contenedor izquierda" onclick="alternarInfo(this, event)">
+        <div class="foto">
+            <img id="img8" src="/fotos/8R.jpg" alt="Obra de arte 8" data-original="/fotos/8R.jpg"
+                data-alt="/fotos/Dibujos/8.jpg">
+            <button class="cambiar-btn" onclick="alternarImagen('img8'); event.stopPropagation();">
+                <img src="/Icons/lapiz.png" alt="Cambiar imagen">
+            </button>
+        </div>
+        <div class="info">
+            <h2>Escalones de Sol</h2>
+            <p>Cada escalón es un recuerdo grabado bajo un cielo anaranjado, donde la pasión se construye sin prisa.</p>
+        </div>
+    </main>
+
+    <main class="contenedor derecha" onclick="alternarInfo(this, event)">
+        <div class="foto">
+            <img id="img9" src="/fotos/9R.jpg" alt="Obra de arte 9" data-original="/fotos/9R.jpg"
+                data-alt="/fotos/Dibujos/9.jpg">
+            <button class="cambiar-btn" onclick="alternarImagen('img9'); event.stopPropagation();">
+                <img src="/Icons/lapiz.png" alt="Cambiar imagen">
+            </button>
+        </div>
+        <div class="info">
+            <h2>Refugio Tropical</h2>
+            <p>Descansa entre telas y flores como si fuera parte del paisaje costero, luminosa como el sol que se
+                despide detrás de las palmas.</p>
+        </div>
+    </main>
+
+    <main class="contenedor izquierda" onclick="alternarInfo(this, event)">
+        <div class="foto">
+            <img id="img10" src="/fotos/10R.jpg" alt="Obra de arte 10" data-original="/fotos/10R.jpg"
+                data-alt="/fotos/Dibujos/10.jpg">
+            <button class="cambiar-btn" onclick="alternarImagen('img10'); event.stopPropagation();">
+                <img src="/Icons/lapiz.png" alt="Cambiar imagen">
+            </button>
+        </div>
+        <div class="info">
+            <h2>Estrella del Anochecer</h2>
+            <p>Brilla con la serenidad de una estrella en la hora azul, cuando el mar duerme y el amor despierta en la
+                brisa nocturna.</p>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
